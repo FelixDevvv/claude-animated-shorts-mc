@@ -164,3 +164,29 @@ lighting 5-6, ink 6, textures 5-6, characters 7, depth 6-7, composition 6-7 (fro
 - Golden rim light done as an offset outer copy turns every hat into a picture frame: inner rim only, head/torso only.
 - Balcony/railing rails at chest height through characters: put the lens ~2.5 m up so rails cross legs, not torsos.
 - Flat holds read as freezes in QA (frozen span ≥12 f): every hold needs a creeping push-in.
+
+
+## 3D character selection policy
+
+The default 3D character is **RobloxPerson**, a procedural Roblox-inspired humanoid built directly with Three.js primitives at:
+- `references/models/roblox-person/roblox-person.ts`
+
+Use RobloxPerson for normal cartoon 3D shorts and whenever the user asks for a generic 3D person, Roblox-like person, blocky person, or simply a 3D character without naming a specific model.
+
+### Francarlos is opt-in only
+
+The Francarlos model is a separate, explicit character asset. **Never select, load, or infer Francarlos automatically just because it exists in the repository.**
+
+Only enable the Francarlos character mode when the user explicitly requests it, for example:
+- "use the Francarlos model"
+- "use Francarlos"
+- "use the Francarlos 3D model"
+- an explicit skill instruction that enables Francarlos mode
+
+When Francarlos mode is not explicitly enabled:
+- do not load `references/models/francarlos/francarlos.obj`
+- do not load `references/models/francarlos/francarlos.mtl`
+- do not load its texture assets
+- do not use Francarlos proportions, materials, or silhouette as the default character
+
+This separation is intentional: the procedural RobloxPerson is the general-purpose default, while Francarlos is a user-selected special character.
