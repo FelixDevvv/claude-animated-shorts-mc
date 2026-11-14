@@ -190,3 +190,36 @@ When Francarlos mode is not explicitly enabled:
 - do not use Francarlos proportions, materials, or silhouette as the default character
 
 This separation is intentional: the procedural RobloxPerson is the general-purpose default, while Francarlos is a user-selected special character.
+
+
+## Reference-video production style
+
+When the supplied reference video is the target style, do **not** make a static storybook, tiny isometric village, or slideshow.
+
+The reference is a fast-paced Roblox-style vertical short:
+- 9:16 gameplay composition.
+- Full-size 3D characters are the visual focus, often medium/full shot and close-up.
+- Characters are expressive and occupy a large portion of the frame.
+- Frequent camera changes and cuts; avoid holding one establishing shot for most of the scene.
+- Environments change with the story: streets, interiors, unusual locations, portals/effects, and dramatic set pieces.
+- Strong readable Spanish captions are integrated into the footage, with short phrases timed to speech/action.
+- Use motion, reactions, pointing, walking, running, looking, jumping and scene interaction rather than static poses.
+- Bright saturated Roblox-like materials, clean lighting and strong contrast.
+- Use sound/action beats as edit points.
+- The story should feel like a creator-made Roblox short, not an AI slideshow or cinematic concept-art montage.
+
+For a new pueblo story, keep the **storytelling language** of the reference while changing the plot and locations. The RobloxPerson remains the default character model. Francarlos remains opt-in only.
+
+### Required shot rhythm
+
+For a typical 30–60 second short:
+1. Hook in the first 1–2 seconds with the character already in an interesting situation.
+2. Establish the pueblo quickly, preferably with the character visible.
+3. Use 1–3 second shots during exposition and faster cuts during discovery/action.
+4. Alternate close-ups, over-the-shoulder shots, full-body shots and environment shots.
+5. Add at least one clear escalation/set-piece shot and one reaction shot.
+6. End on a visual reveal or cliffhanger rather than a static fade.
+
+### Character requirements
+
+The RobloxPerson must be rendered as an actual articulated 3D character using the Three.js character source, not represented by a flat 2D card or a tiny icon. Keep the character large enough to read facial direction, body pose and clothing.
