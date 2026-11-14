@@ -5,7 +5,7 @@ The supplied character is a **3D Wavefront OBJ** exported from Roblox Studio.
 Expected asset:
 - `francarlos.obj`
 - The OBJ declares `mtllib francarlos.mtl`.
-- The uploaded source did not include the companion MTL file, so this repository does not invent missing materials or textures.
+- The companion `francarlos.mtl` is now included in this folder. It maps the model materials to `Handle1_diff.png` for the diffuse/alpha texture.
 
 ## Usage
 
